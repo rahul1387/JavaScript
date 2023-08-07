@@ -23,11 +23,11 @@ var num2 = 15;
 
 //Strings
 var str1 = "Rhaul is a good boy";
-var str2 = 'Neeraj is a bad boy'; 
+var str2 = 'Neeraj is a bad boy';
 
 //Objects
 // console.log("This is Object:")
-var marks = {rahul: 99.99,neeraj: 88,sneha: 10,raj: 15,};
+var marks = { rahul: 99.99, neeraj: 88, sneha: 10, raj: 15, };
 // console.log(marks);
 
 // Boolean
@@ -45,7 +45,7 @@ var n = null; //---> This is null value means the variable has a null value.
 
 // Array
 // console.log("This is Array:")
-var arr = [1,2,3,"Pizza",4];
+var arr = [1, 2, 3, "Pizza", 4];
 // console.log(arr);
 
 //Operators in Javascript
@@ -94,11 +94,44 @@ var y = 100;
 
 //Functions in Javascript
 // DRY --> Do not repeat yourself
-function avg(a,b)
-{
-    var c = (a + b)/2;
+function avg(a, b) {
+    var c = (a + b) / 2;
     return c;
 }
 c1 = avg(4, 6);
 c2 = avg(10, 10);
 console.log(c1, c2);
+
+//Conditionals in Javascript
+
+// Singal if statement 
+var age = 600;
+// if(age<18)
+// {
+//     console.log("You are not adult");
+// }
+
+// if else Statements 
+// if(age<18)
+// {
+//     console.log("You are not adult");
+// }else
+// {
+//     console.log("You are adult now!");
+// }
+
+// if else ladder 
+if (age == 80) {
+    console.log("You are senior citizen");
+} else if (age < 18) {
+    console.log("You are kid");
+} else if (age == 60) {
+    console.log("Conform you are becoming older");
+} else if (age == 90) {
+    console.log("Conform you are going die");
+} else if (age == 110) {
+    console.log("Conform you are dead");
+} else {
+    console.log("You are not a human! aa! aa! Monster!!!")
+    console.log("Run everybody!!!")
+}
