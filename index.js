@@ -100,7 +100,7 @@ function avg(a, b) {
 }
 c1 = avg(4, 6);
 c2 = avg(10, 10);
-console.log(c1, c2);
+// console.log(c1, c2);
 
 //Conditionals in Javascript
 
@@ -121,17 +121,32 @@ var age = 600;
 // }
 
 // if else ladder 
+/*
 if (age == 80) {
     console.log("You are senior citizen");
 } else if (age < 18) {
     console.log("You are kid");
 } else if (age == 60) {
-    console.log("Conform you are becoming older");
+    console.log("Confirm you are becoming older");
 } else if (age == 90) {
-    console.log("Conform you are going die");
+    console.log("Confirm you are going die");
 } else if (age == 110) {
-    console.log("Conform you are dead");
+    console.log("Confirm you are dead");
 } else {
-    console.log("You are not a human! aa! aa! Monster!!!")
-    console.log("Run everybody!!!")
+    console.log("You are not a human! aa! aa! Monster!!!");
+    console.log("Run everybody!!!");
 }
+*/
+// Constant
+// WE can't redeclare this and We can't change the value second time.
+const co = 0; // ---> We can't change the value because it is constant.
+
+// let 
+// WE can't redeclare this
+let name = "Rahul";
+
+{
+    let name = "Neeraj";
+    console.log(name);
+}
+console.log(name);
