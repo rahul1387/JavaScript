@@ -147,6 +147,28 @@ let name = "Rahul";
 
 {
     let name = "Neeraj";
-    console.log(name);
+    // console.log(name);
 }
-console.log(name);
+// console.log(name);
+
+let myArr = ["Motor", "Book", 13, null, true];
+// Array Methods 
+// console.log(myArr.length);
+
+// myArr.pop(); ---> It will remove the last element from the array.
+// myArr.push("Rahul"); ---> It will add one more element in the array.
+// myArr.shift(); ---> It will remove the first element from the array.
+// myArr.unshift("Neeraj"); ---> It will add a element in the array whichs index will 0.
+// myArr.toString(); ---> It will convert the array into String.
+
+// console.log(myArr); 
+
+// Strings Methods in Javascript.
+
+let myString = "Rahul is good boy";
+// console.log(myString.length);
+// console.log(myString.indexOf("good"));
+// console.log(myString.lastIndexOf("y"));
+
+m = myString.replace("Rahul", "Neeraj");
+// console.log(m);
