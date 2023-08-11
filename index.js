@@ -145,10 +145,10 @@ if (age == 80) {
 // WE can't redeclare this
 // let name = "Rahul";
 
-{
-    // let name = "Neeraj";
-    // console.log(name);
-}
+// {
+//      let name = "Neeraj";
+//      console.log(name);
+// }
 // console.log(name);
 
 // let myArr = ["Motor", "Book", 13, null, true];
@@ -182,22 +182,68 @@ let num = [1, 2, 3, 4, 5];
 
 //For Each loop for array
 num.forEach((element)=>{
-    console.log(element*element);
+    // console.log(element*element);
   })
 
 // Array from
 let nm = "Rahul"
 let array = Array.from(nm);
-console.log(array);
+// console.log(array);
 
 // for...of ---> It will print every element of array.
 for(let i of num)
 {
-    console.log(i)
+    // console.log(i)
 }
 
 // for...in ---> It will give index of array.
 for(let i in num)
 {
-    console.log(i)
+    // console.log(i)
+}
+
+//Date in Javascript
+let mydate = new Date();
+// console.log(mydate.getTime());
+// console.log(mydate.getDate());
+// console.log(mydate.getDay());
+// console.log(mydate.getFullYear());
+// console.log(mydate.getMonth());
+
+// Dom Manipulation
+let elem = document.getElementById('click');
+// console.log(elem);
+
+let elemClass = document.getElementsByClassName("container");
+// console.log(elemClass);
+elemClass[0].classList.add("bg-primary");
+// console.log(elem.innerHTML)
+// console.log(elem.innerText)
+
+var tn = document.getElementsByTagName("div")
+console.log(tn)
+
+//Appendchild
+createdElement= document.createElement("p")
+createdElement.innerText = "This is a created Paragraph"
+tn[0].appendChild(createdElement)
+
+//Replacechild
+createdElement2 = document.createElement("b")
+createdElement2.innerText = "This is a created Bold"
+tn[0].replaceChild(createdElement2, createdElement)
+
+// Selecting using Query
+var sel = document.querySelector('.container');
+console.log(sel);
+var sel2 = document.querySelectorAll('.cotainer');
+console.log(sel2);
+
+//Events in JavaScript
+function clicked(){
+    console.log(mydate.getDate());
+}
+window.onload = function()
+{
+    console.log("The document was loaded");
 }
