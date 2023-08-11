@@ -247,3 +247,20 @@ window.onload = function()
 {
     console.log("The document was loaded");
 }
+let prevHTMl = document.querySelectorAll(".container")[1].innerHTML
+// firstContainer.addEventListener('click', function(){
+//     document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked!</b>"
+//     console.log("Clicked!")
+// })
+// firstContainer.addEventListener('mouseover', function(){
+//     console.log("Mouse is on Container")
+// })
+//  
+firstContainer.addEventListener('mouseup', function(){
+    document.querySelectorAll(".container")[1].innerHTML = prevHTMl
+    console.log("Mouse up when clicked on Container")
+})
+firstContainer.addEventListener('mousedown', function(){
+    document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked!</b>"
+    console.log("Mouse down when clicked on Container")
+})
