@@ -241,7 +241,7 @@ console.log(sel2);
 
 //Events in JavaScript
 function clicked(){
-    console.log(mydate.getDate());
+    console.log("The Button was Clicked!");
 }
 window.onload = function()
 {
