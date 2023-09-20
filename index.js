@@ -1,7 +1,7 @@
 //Ways to print in Javascript
 //console.log("Hello World");
 //alert("This is an alert");
-//document.write("This is an document write")
+// document.write("This is an document write")
 
 
 // 2.Javascript console API
@@ -221,7 +221,7 @@ elemClass[0].classList.add("bg-primary");
 // console.log(elem.innerText)
 
 var tn = document.getElementsByTagName("div")
-console.log(tn)
+// console.log(tn)
 
 //Appendchild
 createdElement= document.createElement("p")
@@ -234,20 +234,20 @@ createdElement2.innerText = "This is a created Bold"
 tn[0].replaceChild(createdElement2, createdElement)
 
 // Selecting using Query
-var sel = document.querySelector('.container');
-console.log(sel);
-var sel2 = document.querySelectorAll('.cotainer');
-console.log(sel2);
+// var sel = document.querySelector('.container');
+// console.log(sel);
+// var sel2 = document.querySelectorAll('.cotainer');
+// console.log(sel2);
 
 //Events in JavaScript
-function clicked(){
-    console.log("The Button was Clicked!");
-}
-window.onload = function()
-{
-    console.log("The document was loaded");
-}
-let prevHTMl = document.querySelectorAll(".container")[1].innerHTML
+// function clicked(){
+//     console.log("The Button was Clicked!");
+// }
+// window.onload = function()
+// {
+//     console.log("The document was loaded");
+// }
+// let prevHTMl = document.querySelectorAll(".container")[1].innerHTML
 // firstContainer.addEventListener('click', function(){
 //     document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked!</b>"
 //     console.log("Clicked!")
@@ -256,11 +256,28 @@ let prevHTMl = document.querySelectorAll(".container")[1].innerHTML
 //     console.log("Mouse is on Container")
 // })
 //  
-firstContainer.addEventListener('mouseup', function(){
-    document.querySelectorAll(".container")[1].innerHTML = prevHTMl
-    console.log("Mouse up when clicked on Container")
-})
-firstContainer.addEventListener('mousedown', function(){
-    document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked!</b>"
-    console.log("Mouse down when clicked on Container")
-})
+// firstContainer.addEventListener('mouseup', function(){
+//     document.querySelectorAll(".container")[1].innerHTML = prevHTMl
+//     console.log("Mouse up when clicked on Container")
+// })
+// firstContainer.addEventListener('mousedown', function(){
+//     document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked!</b>"
+//     console.log("Mouse down when clicked on Container")
+// })
+
+// Set Timeout and Set interval
+log =()=>{
+    console.log("I will come again in a sec")
+}
+
+// setTimeout(log,2000);
+// setInterval(log,1000);
+
+// we can use clearinterval/cleartimeout to cancel the setTimeout/setInterval.
+
+// JSON in JavaScript
+// obj = {name:"Rahul",a:"Raj",b:"Rohit"};
+// jso = JSON.stringify(obj);
+// console.log(jso);
+// parsed = JSON.parse(`{"name":"Rahul","a":"Raj","b":"Rohit"}`); //--> Parse always works in backticks 
+// console.log(parsed);
