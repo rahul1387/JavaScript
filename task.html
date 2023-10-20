@@ -8,16 +8,14 @@
 <body>
     <div class="container">
         <input type="text" placeholder="Enter your name" id="name" autocomplete="off">
-        <button id="btn" type="submit">Submit</button>
     </div>
     <div id="show">
 
     </div>
 </body>
 <script>
-    let btn = document.getElementById("btn");
-    btn.addEventListener("click", ()=>{
-        let inpt = document.getElementById('name');
+    let inpt = document.getElementById('name');
+    inpt.addEventListener("change", ()=>{
         showing = document.getElementById('show').innerHTML = `Hello ${inpt.value}`
     })
 </script>   
