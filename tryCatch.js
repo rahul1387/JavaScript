@@ -3,5 +3,5 @@ try{
     console.log(Rahul);
 }catch(err)
     {
-        console.log("Rahul2");
+        console.log(err);
     }
